@@ -7,7 +7,7 @@ def carregar_tarefas():
         with open(nome_arquivo, "r", encoding="utf-8") as arquivo:
             tarefas = json.load(arquivo)
         return tarefas
-    except FileNotFoundError:
+    except (FileNotFoundError, json.JSONDecodeError):
         return []
 
 def salvar_tarefas(tarefas):
