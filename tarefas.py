@@ -21,14 +21,13 @@ def adicionar_tarefa(descricao, prioridade, data_entrega):
 
 def listar_tarefas(status="Todas"):
     tarefas = carregar_tarefas()
-
-    if status == "Concluída":
-        return [tarefa for tarefa in tarefas if tarefa["status"] == "Concluída"]
+    if status == "Concluida":
+        return [tarefa for tarefa in tarefas if tarefa["status"] == "Concluida"]
     elif status == "Pendente":
         return [tarefa for tarefa in tarefas if tarefa["status"] == "Pendente"]
     else: 
         return tarefas
-
+    
 def concluir_tarefa(id_tarefa):
     tarefas = carregar_tarefas()
     for tarefa in tarefas:
