@@ -7,7 +7,7 @@ O Task Manager é uma aplicação desenvolvida em Python para gerenciamento de t
 O projeto foi criado com o objetivo de praticar conceitos fundamentais da linguagem, como modularização, manipulação de arquivos JSON e organização de código.
 
 ## Funcionalidades
-- Adicionar/Remover Tarefas
+- Adicionar/Excluir Tarefas
 - Definir/editar prioridade de tarefas
 - Adicionar data de entrega
 - Listar tarefas (com possibilidade de filtrar por status)
